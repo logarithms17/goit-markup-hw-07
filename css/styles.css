@@ -22,6 +22,90 @@ body {
     margin-bottom: 0;
 }
 
+    /* MOBILE LAYOUT */
+
+@media screen and (max-width: 428px) {
+    body {
+        max-width: 428px;
+    }
+
+    header,
+    .section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .nav li{
+        display: none;
+    }
+
+    .contacts li{
+        display: none;
+    }
+
+        /* HERO IMAGE SECTION */
+
+    main h1{
+        color: var(--WHITE, #FFF);
+            text-align: center;
+        
+            /* Header 2 */
+            font-family: Roboto;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            /* 111.111% */
+            letter-spacing: 0.72px;
+            text-transform: capitalize;
+    }
+
+        /* END OF HERO IMAGE SECTION */
+
+        .hero-image {
+            margin-bottom: 96px;
+            height: 432px;
+            background-image: url("people-office.png");
+        }
+    
+        .image-overlay {
+            height: 432px;
+            background-color: rgba(46, 47, 66, 0.7);
+        }
+
+        /* SECTION 1 (MOBILE) */
+
+    .svg {
+        width: 0;
+        height: 0;
+        padding: 0;
+        background-color: var(--CLOUD);
+    }
+
+    .section1 {
+        margin-top: 88px;
+    }
+
+    .section1 h3 {
+        color: var(--NAVY-BLUE, #2E2F42);
+            text-align: center;
+        
+            /* Header 2 */
+            font-family: Roboto;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            /* 111.111% */
+            letter-spacing: 0.72px;
+            text-transform: capitalize;
+            margin: 0;
+    }
+}
+
+    /* END OF MOBILE LAYOUT */
+
+    /* TABLET LAYOUT */
 
 @media screen and (min-width: 768px) {
     body {
@@ -58,6 +142,9 @@ body {
     }
 
     .nav li{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             height: 73px;
                 gap: 20px;
     }
@@ -68,6 +155,37 @@ body {
     } */
 
         /* END OF HEADER */
+
+        /* HERO IMAGE SECTION */
+        
+    main h1 {
+        color: var(--WHITE, #FFF);
+        text-align: center;
+
+        /* Header 2 */
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        /* 111.111% */
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+    }
+
+    .hero-image {
+        margin-bottom: 96px;
+        height: 436px;
+        background-image: url("people-office.png");
+    }
+
+    .image-overlay {
+        height: 436px;
+        background-color: rgba(46, 47, 66, 0.7);
+    }
+
+    
+        /* END OF HERO IMAGE SECTION */
 
 
         /* section 1 */
@@ -118,16 +236,16 @@ body {
 
     .section3 h3 {
         color: var(--NAVY-BLUE, #2E2F42);
-            text-align: center;
-        
-            /* Header 3 */
-            font-family: Roboto;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 24px;
-            /* 120% */
-            letter-spacing: 0.4px;
+        text-align: center;
+
+        /* Header 3 */
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        /* 120% */
+        letter-spacing: 0.4px;
     }
 
     .section3 li{
@@ -174,117 +292,152 @@ body {
     }
 }
 
-    /* END OF 768PX SCREEN */
+    /* END OF TABLET LAYOUT */
 
     /* 1440 SCREEN CODES */
 
-        @media screen and (min-width: 1440px) {
-            body {
-                max-width: 1440px;
-            }
+@media screen and (min-width: 1440px) {
+    body {
+        max-width: 1440px;
+    }
 
-                /* HEADER */
+        /* HEADER */
 
 
-            header,
-            .section,
-            footer {
-                padding-left: 156px;
-                padding-right: 156px;
-            }
+    header,
+    .section,
+    footer {
+        padding-left: 156px;
+        padding-right: 156px;
+    }
 
-            .menu {
-                gap: 76px;
-            }
+    .menu {
+        gap: 76px;
+    }
 
-            .contacts {
-                display: flex;
-                flex-direction: row;
-                flex-grow: 1;
-                justify-content: flex-end;
-                gap: 40px;
-            }
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: flex-end;
+        gap: 40px;
+    }
 
-            .contacts a {
-                color: var(--SLATE, #434455);
-                
-                    /* Body */
-                    font-family: Roboto;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 24px;
-                    /* 150% */
-                    letter-spacing: 0.32px;
-            }
+    .contacts a {
+        color: var(--SLATE, #434455);
+        
+            /* Body */
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            /* 150% */
+            letter-spacing: 0.32px;
+    }
 
-            .nav li {
-                height: 73px;
-                gap: 20px;
-            }
+    .nav li {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 73px;
+        gap: 20px;
+    }
 
-            .contacts li {
-                height: 73px;
-                gap: 20px;
-                    
-            }
+    .contacts li {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 73px;
+        gap: 20px;
+            
+    }
+
+    /* HERO IMAGE SECTION */
+
+    main h1 {
+        color: var(--WHITE, #FFF);
+
+        /* Header 1 */
+        font-family: Roboto;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 1.12px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
     
-            /* section 1 */
-    
-            .section1 li {
-                width: 264px;
-            }
+    .hero-image{
+        margin-bottom: 120px;
+        height: 600px;
+        background-image: url("people-office.png");
+    }
 
-            .svg {
-                width: 264px;
-                height: 112px;
-                padding: 24px 100px 24px 100px;
-                background-color: var(--CLOUD);
-            }
+    .image-overlay {
+        height: 600px;
+        background-color: rgba(46, 47, 66, 0.7);
+    }
     
-            /* Section 2 */
-    
-            .section2 {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-    
-            /* Section 3 */
-            h3 {
-                color: var(--NAVY-BLUE, #2E2F42);
-    
-                /* Header 3 */
-                font-family: Roboto;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 24px;
-                /* 120% */
-                letter-spacing: 0.4px;
-                margin: 0;
-            }
-    
-            h2 {
-                margin-bottom: 120px;
-            }
-    
-            /* FOOTER */
-    
-            footer .footer-form {
-                padding-top: 101px;
-            }
 
-            .footer-form button {
-                margin-bottom: 132px;
-            }
+    /* section 1 */
 
-            .footer-form img {
-                top: 149px;
-                left: 405px;
-            }
-    
-        }
+    .section1 li {
+        width: 264px;
+    }
+
+    .svg {
+        width: 264px;
+        height: 112px;
+        padding: 24px 100px 24px 100px;
+        background-color: var(--CLOUD);
+    }
+
+    /* Section 2 */
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Section 3 */
+    h3 {
+        color: var(--NAVY-BLUE, #2E2F42);
+
+        /* Header 3 */
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        /* 120% */
+        letter-spacing: 0.4px;
+        margin: 0;
+    }
+
+    h2 {
+        margin-bottom: 120px;
+    }
+
+    /* FOOTER */
+
+    footer .footer-form {
+        padding-top: 101px;
+    }
+
+    .footer-form button {
+        margin-bottom: 132px;
+    }
+
+    .footer-form img {
+        top: 149px;
+        left: 405px;
+    }
+
+}
     
         /* END OF 1440px SCREEN */
 
@@ -302,20 +455,6 @@ li {
 
 
 /* Header Hover Effect */
-
-
-
-.nav li {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.contacts li {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
 
 
 .hover-border {
@@ -371,11 +510,6 @@ p {
 
     /* Top Line */
 
-/* header, .section1, .section2, .section3, .customer-section,
-footer {
-    padding-left: 156px;
-    padding-right: 156px;
-} */
 
 header {
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
@@ -437,38 +571,22 @@ header {
     /* Hero Image Section */
 
 .hero-image {
-    height: 600px;
-    background-image: url("people-office.png");
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 120px;
+    background-position: center;
 }
 
 .image-overlay {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 600px;
-    background-color: rgba(46, 47, 66, 0.7);
     background-position: center;
 }
 
-main h1 {
-    color: var(--WHITE, #FFF);
-    
-        /* Header 1 */
-        font-family: Roboto;
-        font-size: 56px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 60px;
-        letter-spacing: 1.12px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        text-align: center;
-}
+
 
 main div {
     display: flex;
