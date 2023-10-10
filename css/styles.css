@@ -36,12 +36,28 @@ body {
 
         /* Header */
 
-        .menu {
-            display: flex;
-            align-items: center;
-            gap: 120px;
-            margin-right: 121px;
-        }
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 120px;
+        margin-right: 121px;
+    }
+
+    .contacts a {
+        
+            font-family: Roboto;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.48px;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+        /* END OF HEADER */
 
 
         /* section 1 */
@@ -154,12 +170,40 @@ body {
             body {
                 max-width: 1440px;
             }
-    
+
+                /* HEADER */
+
+
             header,
             .section,
             footer {
                 padding-left: 156px;
                 padding-right: 156px;
+            }
+
+            .menu {
+                gap: 76px;
+            }
+
+            .contacts {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+                justify-content: flex-end;
+                gap: 40px;
+            }
+
+            .contacts a {
+                color: var(--SLATE, #434455);
+                
+                    /* Body */
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    /* 150% */
+                    letter-spacing: 0.32px;
             }
     
             /* section 1 */
@@ -232,19 +276,15 @@ li {
 
 
 .nav li {
-    height: 73px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 20px;
 }
 
 .contacts li {
-    height: 73px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 20px;
 }
 
 
@@ -351,23 +391,7 @@ a {
     color: inherit;
 }
 
-.contacts {
-    color: var(--SLATE, #434455);
 
-    /* Body */
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    /* 150% */
-    letter-spacing: 0.32px;
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
-    gap: 40px;
-    /* flex-wrap: wrap; */
-}
 
 
 
@@ -380,7 +404,6 @@ header {
 .menu {
     display: flex;
     align-items: center;
-    gap: 76px;
 }
 
 /* .menu li {
