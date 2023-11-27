@@ -170,7 +170,7 @@ body {
 
         .team-socials {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
         }
     
         .team-socials-icon {

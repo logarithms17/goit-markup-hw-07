@@ -16,7 +16,7 @@
         <nav class="menu">
             <div>
                 <a href="#" class="web-studio">WEB<span>STUDIO</span></a>
-                <a href="/" class="hamburger-button"><img src="./images/icons.svg/charm-menu-hamburger.svg" alt="hamburger-button"></a>
+                <img src="./images/icons.svg/charm-menu-hamburger.svg" alt="hamburger-button" class="js-open-menu hamburger-button">
             </div>
     
             <ul class="nav">
@@ -49,6 +49,60 @@
     
         </ul>
     </header>
+
+    <div class="js-menu-container mobile-menu">
+        <div class="mobile-menu-container">
+            <img src="./images/icons.svg/close.svg" alt="close-button" class="js-close-menu">
+    
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-link">
+                    <li class="mobile-studio mobile-links">
+                        <a href="">Studio</a>
+                    </li>
+                    <li class="mobile-links">
+                        <a href="">Portfolio</a>
+                    </li>
+                    <li class="mobile-links">
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+    
+                <div class="mobile-social-link">
+                    <ul class="mobile-links">
+                        <li>
+                            <a class="mobile-link mobile-active" href="">+11 (000) 111-11-11</a>
+                        </li>
+                        <li>
+                            <a href="" class="mobile-contact">info@devstudio.com</a>
+                        </li>
+                    </ul>
+    
+                    <div class="team-socials">
+                        <a class="team-socials-icon">
+                            <svg width="16" height="16">
+                                <use href="./images/iconss.svg#instagram-2"></use>
+                            </svg>
+                        </a>
+                        <a class="team-socials-icon">
+                            <svg width="16" height="16">
+                                <use href="./images/iconss.svg#twitter-1"></use>
+                            </svg>
+                        </a>
+                        <a class="team-socials-icon">
+                            <svg width="16" height="16">
+                                <use href="./images/iconss.svg#linkedin-1"></use>
+                            </svg>
+                        </a>
+                        <a class="team-socials-icon">
+                            <svg width="16" height="16">
+                                <use href="./images/iconss.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
 
     <!-- Filters -->
     <main>
@@ -251,5 +305,6 @@
         crossorigin="anonymous">
         </script>
     <script type="text/javascript" src="./js/mobile-menu.js"></script>
+    
 </body>
 </html>
